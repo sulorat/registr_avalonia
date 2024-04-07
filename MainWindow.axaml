@@ -22,9 +22,9 @@
 				<ComboBoxItem>Brazilia</ComboBoxItem>
 			</ComboBox>
 			<TextBlock Margin="10"  HorizontalAlignment="Center">Your phone number</TextBlock>
-			<TextBox Margin="5" KeyUp="TextBox_KeyUp" Height="40" Name="Phone" Width="300"></TextBox>
-			<CheckBox Margin="10" Height="30" HorizontalAlignment="Center"> Keep me signed in</CheckBox>
-			<Button Name="IN" Margin="10" Height="40"  VerticalContentAlignment="Center" HorizontalAlignment="Center"  Width="295" Background="Blue" IsVisible="False" HorizontalContentAlignment="Center" Foreground="White">NEXT</Button>
+			<TextBox Margin="5" Text="{Binding phone_number}" KeyUp="TextBox_KeyUp" Height="40" x:Name="Phone" Width="300"></TextBox>
+			<CheckBox  Margin="10" Height="30" HorizontalAlignment="Center"> Keep me signed in</CheckBox>
+			<Button Name="IN" Margin="10" Click="ToSecWindow" Height="40"  VerticalContentAlignment="Center" HorizontalAlignment="Center"  Width="295" Background="Blue" IsVisible="False" HorizontalContentAlignment="Center" Foreground="White">NEXT</Button>
 			<Button Height="30" Margin="10" Background="White" HorizontalAlignment="Center" Foreground="Blue">LOG IN BY QR CODE</Button>
 			<Button Margin="10" HorizontalAlignment="Center" Background="White" Foreground="Blue">ПРОДОЛЖИТЬ НА РУССКОМ</Button>
 		</StackPanel>
