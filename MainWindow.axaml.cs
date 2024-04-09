@@ -6,7 +6,13 @@ using Avalonia.Interactivity;
 namespace reg
 {
     public partial class MainWindow : Window
-    {
+    { 
+        private class Number
+        {
+            public string phone_number { get; set; }
+        }
+        
+        
         private Number _number = new Number();
 
         public MainWindow()
@@ -15,10 +21,7 @@ namespace reg
             DataContext = _number;
         }
         
-        private class Number
-        {
-            public string phone_number { get; set; }
-        }
+       
 
         private void TextBox_KeyUp(object? sender, Avalonia.Input.KeyEventArgs e)
         {
@@ -33,6 +36,7 @@ namespace reg
                 DataContext = _number
             };
             _win1.Show();
+            Close();
         }
     }
 }
