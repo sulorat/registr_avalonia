@@ -8,27 +8,17 @@
 	
 	<Grid ColumnDefinitions="*,*,*" RowDefinitions="*,2*,*" ShowGridLines="True">
 
-		<StackPanel Grid.Column="1" Grid.Row="1" >
-			
-			<TextBlock Height="40"  VerticalAlignment="Bottom" HorizontalAlignment="Center" Width="90" FontSize="20" FontWeight="Black" >Telegram</TextBlock>
-			<TextBlock Height="20" Width="360" HorizontalAlignment="Center">Please confirm your coutry code and enter your</TextBlock>
-			<TextBlock Height="40" Width="100" HorizontalAlignment="Center"> phone number</TextBlock>
-			<TextBlock Height="20" Width="80" HorizontalAlignment="Center" Grid.Column="1">Country</TextBlock>
-			<ComboBox SelectedIndex="0" Height="40" HorizontalAlignment="Center" Width="300" MaxDropDownHeight="120">
-				<ComboBoxItem>Russia</ComboBoxItem>
-				<ComboBoxItem>France</ComboBoxItem>
-				<ComboBoxItem>England</ComboBoxItem>
-				<ComboBoxItem>USA</ComboBoxItem>
-				<ComboBoxItem>Brazilia</ComboBoxItem>
-			</ComboBox>
-			<TextBlock Margin="10"  HorizontalAlignment="Center">Your phone number</TextBlock>
-			<TextBox Margin="5" KeyUp="TextBox_KeyUp" Height="40" Name="Phone" Width="300"></TextBox>
-			<CheckBox Margin="10" Height="30" HorizontalAlignment="Center"> Keep me signed in</CheckBox>
-			<Button Name="IN" Margin="10" Height="40"  VerticalContentAlignment="Center" HorizontalAlignment="Center"  Width="295" Background="Blue" IsVisible="False" HorizontalContentAlignment="Center" Foreground="White">NEXT</Button>
-			<Button Height="30" Margin="10" Background="White" HorizontalAlignment="Center" Foreground="Blue">LOG IN BY QR CODE</Button>
-			<Button Margin="10" HorizontalAlignment="Center" Background="White" Foreground="Blue">ПРОДОЛЖИТЬ НА РУССКОМ</Button>
-		</StackPanel>
+		<StackPanel Grid.Column="1" Grid.Row="1">
 		
+		<TextBlock  HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0,40,0,0">Name</TextBlock>
+		<TextBox Name="name_sign_up"  HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0,10,0,0" Height="30" Width="200"></TextBox>
+		<TextBlock VerticalAlignment="Center" HorizontalAlignment="Center" Margin="0,30,0,0">Password</TextBlock>
+		<TextBox Name="password_sign_up" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,10,0,0" Height="30" Width="200"></TextBox>
+
+		</StackPanel>
+		<StackPanel Grid.Column="1" Grid.Row="2">
+			<Button Name="sign_up" Click="Button_Click" VerticalAlignment="Center" HorizontalAlignment="Center">Sign up</Button>
+		</StackPanel>
 	</Grid>
 	
 	
